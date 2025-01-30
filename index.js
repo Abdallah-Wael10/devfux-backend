@@ -3,7 +3,13 @@ const app = express();
 app.use(express.json());
 require("dotenv").config()
 const cors = require('cors');
-app.use(cors());
+app.use(cors({
+    origin: [
+      'https://devfux-frontend.vercel.app/',
+      'http://localhost:3000'
+    ],
+    credentials: true
+  }));
 
 const mongoose = require('mongoose');
 
