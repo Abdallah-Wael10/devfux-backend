@@ -3,7 +3,7 @@ const router = express.Router();
 const controllers = require("../controllers/package.controller")
 const verfiyToken = require("../middleware/verfiyToken")
 router.route("/")
-.get(verfiyToken,controllers.getALLPackage)
+.get(controllers.getALLPackage)
 .post(verfiyToken,controllers.addPackage)
 
 router.route("/:id")

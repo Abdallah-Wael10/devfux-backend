@@ -22,7 +22,7 @@ router.post(
  verfiyToken, createProject
 );
 
-router.get('/',verfiyToken, getAllProjects);
+router.get('/', getAllProjects);
 router.get('/:id', getProjectById);
 
 router.patch(
