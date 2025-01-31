@@ -5,7 +5,7 @@ require("dotenv").config()
 const cors = require('cors');
 app.use(cors({
     origin: [
-      'https://devfux-frontend.vercel.app/',
+      'https://devfux-frontend.vercel.app',
       'http://localhost:3000'
     ],
     credentials: true
